@@ -41,7 +41,7 @@ RUN \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
   rm -rf \
-    /config/.cache \
+    /home/polaris/.cache \
     /var/lib/apt/lists/* \
     /var/tmp/* \
     /tmp/*
