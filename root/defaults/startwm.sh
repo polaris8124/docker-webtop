@@ -21,6 +21,6 @@ cat <<EOT >> "${HOME}"/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
 </channel>
 EOT
 fi
-
-# Launch DE
-/usr/bin/xfce4-session > /dev/null 2>&1
+mkdir -p ${HOME}/.config/xfce4
+touch ${HOME}/.config/xfce4/xfce.log
+/usr/bin/xfce4-session >> ${HOME}/.config/xfce4/xfce.log 2>&1
