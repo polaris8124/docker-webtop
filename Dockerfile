@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntujammy
+FROM registry.polaris.ovh/docker-baseimage-kasmvnc:latest
 
 # set version label
 ARG BUILD_DATE
@@ -52,4 +52,4 @@ COPY /root /
 
 # ports and volumes
 EXPOSE 3000
-VOLUME /config
+VOLUME /home/polaris
