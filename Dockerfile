@@ -14,12 +14,10 @@ COPY /root/etc/apt/preferences.d/firefox-no-snap /etc/apt/preferences.d/firefox-
 
 RUN \
   echo "**** install packages ****" && \
-  add-apt-repository -y ppa:mozillateam/ppa && \
   apt-get update && \
   DEBIAN_FRONTEND=noninteractive \
   apt-get install --no-install-recommends -y \
     dolphin \
-    firefox \
     gwenview \
     kde-config-gtk-style \
     kdialog \
