@@ -9,9 +9,6 @@ ENV S6_VERBOSITY 3
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
-# prevent Ubuntu's firefox stub from being installed
-COPY /root/etc/apt/preferences.d/firefox-no-snap /etc/apt/preferences.d/firefox-no-snap
-
 RUN \
   echo "**** install packages ****" && \
   apt-get update && \
