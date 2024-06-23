@@ -1,4 +1,4 @@
-FROM registry.polaris.ovh/docker-baseimage-kasmvnc:ubuntu-latest
+FROM registry.polaris.ovh/docker-baseimage-kasmvnc:polaris-ubuntu-latest
 
 # set version label
 ARG BUILD_DATE
