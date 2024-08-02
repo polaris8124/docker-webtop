@@ -1,4 +1,4 @@
-FROM registry.polaris.ovh/image-base-kasm:polaris-ubuntu-latest
+FROM registry.polaris.ovh/image-base-kasm:polaris-ubuntu-noble-latest
 
 # set version label
 ARG BUILD_DATE
